@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>营销号文案生成器</title>
+</head>
+<body>
+	<b>主体：</b>
+	<br>
+	<input type="text" id="main" placeholder="输入主体">
+	<br>
+	<b>事件：</b>
+	<br>
+	<input type="text" id="event" placeholder="输入事件">
+	<br>
+	<b>另一种说法：</b>
+	<br>
+	<input type="text" id="another" placeholder="输入另一种说法">
+	<br>
+	<textarea id="result" style="width: 400px;height: 500px;"></textarea>
+	<br>
+	<script type="text/javascript">
+		function generate()
+		{
+			var main=document.getElementById("main");
+			var event=document.getElementById("event");
+			var another=document.getElementById("another");
+			var ans=main.value+event.value+"是怎么回事呢？";
+			ans+=main.value+"相信大家都很熟悉，但是"+main.value+event.value+"是怎么回事呢，下面就让小编带大家一起了解吧。\n";
+			ans+=main.value+event.value+"，其实就是"+another.value+"，大家可能会很惊讶"+main.value+"怎么会"+event.value+"呢？但事实就是这样，小编也感到非常惊讶。\n这就是"+main.value+event.value+"的事情了，大家有什么想法呢？欢迎在评论区告诉小编一起讨论哦！";
+			document.getElementById("result").value=(ans);
+		}
+	</script>
+	<button onclick="generate()">生成沙雕营销号文案吧!</button>
+	<footer>
+		Another Languages:<a href="/en">English</a> <a href="/jp">日本語</a> <a href="/fr">Français</a>
+		<br>
+		©2019~2020 版权jjl所有，All right reserved.
+		<br>
+		如有侵权，联系本人。
+	</footer>
+</body>
+</html>
