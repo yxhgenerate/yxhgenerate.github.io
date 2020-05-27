@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dumb account's copywriting generator</title>
+</head>
+<body>
+	There's something about what's 营销号:
+	<br>
+	An account that plagiarize and usurp some famous man's video.
+	<br>
+	These stupids make this sort of things into money.
+	<br>
+	<b>Main:</b>
+	<br>
+	<input type="text" id="main" placeholder="Enter main event...">
+	<br>
+	<b>Event:</b>
+	<br>
+	<input type="text" id="event" placeholder="Enter an event...">
+	<br>
+	<b>Another saying:</b>
+	<br>
+	<input type="text" id="another" placeholder="Enter another saying...">
+	<br>
+	<textarea id="result" style="width: 400px;height: 500px;"></textarea>
+	<br>
+	<script type="text/javascript">
+		function generate()
+		{
+			var main=document.getElementById("main");
+			var event=document.getElementById("event");
+			var another=document.getElementById("another");
+			var ans="What is "+main.value+event.value+"?";
+			ans+="I think that everyone is familiar with "+main.value",but what is"+main.value+event.value+"?Let's go and have a look with me.\n";
+			ans+=main.value+event.value+",is actually"+another.value+",maybe you are all surprised that why"+main.value+" means"+event.value+"?but that's the real,I'm also surprised too.\nThis is all about"+main.value+event.value+"what do you think about this sort of things?Welcome make a comment and discuss!";
+			document.getElementById("result").value=(ans);
+		}
+	</script>
+	<button onclick="generate()">Generate!</button>
+	<footer>
+		Another Languages:<a href="https://yxhgenerate.github.io">中文</a> <a href="https://yxhgenerate.github.io/jp">日本語</a> <a href="https://yxhgenerate.github.io/fr">Français</a>
+		<br>
+		©2019~2020 Copyright jjl,All right reserved.
+		<br>
+		Call jjl if plagiarized.
+	</footer>
+</body>
+</html>
